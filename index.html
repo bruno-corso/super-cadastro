@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,41 @@
     <link rel="stylesheet" href="./base.css">
     <title>Super Cadastro</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="cartao">
         <h1 class="titulo">Cadastre-se</h1>
         <form action="#" class="cadastro">
-            teste
+            <fieldset>
+                <legend class="cadastro__legenda">Informações Básicas</legend>
+                <div class="cadastro__container">
+                    <label for="primeiro_nome" class="container__label">Primeiro Nome</label>
+                    <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Nome" class="container__input" required>
+                    <span class="container__erro">Este campo não está válido</span>
+                </div>
+                <div class="cadastro__container">
+                    <label for="sobrenome" class="container__label">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="container__input" required>
+                    <span class="container__erro">Este campo não está válido</span>
+                </div>
+                <div class="cadastro__container">
+                    <label for="email" class="container__label">E-mail</label>
+                    <input type="email" name="email" id="email" class="container__input" required>
+                    <span class="container__erro">Este campo não está válido</span>
+                </div>
+                <div class="cadastro__container">
+                    <label for="username" class="container__label">Nome de Usuário</label>
+                    <input type="text" name="username" id="username" class="container__input" required>
+                    <span class="container__erro">Este campo não está válido</span>
+                </div>
+                <div class="cadastro__container">
+                    <label for="senha" class="container__label">Crie uma senha</label>
+                    <input type="password" name="senha" id="senha" pattern="^(?=.*\d).{8,12}$" title="A senha deve ser de 8 a 12 caracteres incluindo letras e pelo menos um número." class="container__input" required>
+                    <span class="container__erro">Este campo não está válido</span>
+                </div>
+            </fieldset>
         </form>
     </div>
 </body>
+
 </html>
