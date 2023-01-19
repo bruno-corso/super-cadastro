@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    --fonte-principal: 'Oxygen', sans-serif; 
+    --cor-fonte: #393E46;
+    --verde-escuro: #6D9886;
+    --verde-claro: #F2E7D5;
+    --background-color: #F7F7F7;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--cor-fonte);
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
+
+.cadastro__container span {
+    display: none;
+    color: red;
+}
