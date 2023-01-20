@@ -18,12 +18,12 @@
                 <legend class="cadastro__legenda">Informações Básicas</legend>
                 <div class="cadastro__container">
                     <label for="primeiro_nome" class="container__label">Primeiro Nome</label>
-                    <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Nome" class="container__input" required>
+                    <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder=" " class="container__input" required>
                     <span class="container__erro">Este campo não está válido</span>
                 </div>
                 <div class="cadastro__container">
                     <label for="sobrenome" class="container__label">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" class="container__input" required>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder=" " class="container__input" required>
                     <span class="container__erro">Este campo não está válido</span>
                 </div>
                 <div class="cadastro__container">
@@ -64,7 +64,7 @@
                 <legend class="cadastro__legenda">Endereço</legend>
                 <div class="cadastro__container">
                     <label for="cep" class="container__label">CEP</label>
-                    <input type="number" name="cep" id="cep" class="container__input" required>
+                    <input type="number" name="cep" id="cep" class="container__input" pattern="(^\d{5}-\d{3}|^\d{2}.\d{3}-\d{3}|\d{8})" required>
                     <span class="container__erro">Este campo não está válido</span>
                 </div>
                 <div class="cadastro__container">
