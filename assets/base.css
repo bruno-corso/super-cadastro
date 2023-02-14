@@ -21,6 +21,11 @@ body {
     color: red;
 }
 
+.cadastro__container-erro {
+    display: none;
+    color: red;
+}
+
 .cartao {
     margin: 5vh auto;
     width: 80%;
