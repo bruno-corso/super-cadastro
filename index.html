@@ -64,7 +64,7 @@
                 <legend class="cadastro__legenda">Endereço</legend>
                 <div class="cadastro__container">
                     <label for="cep" class="container__label">CEP</label>
-                    <input type="number" name="cep" id="cep" class="container__input" pattern="(^\d{5}-\d{3}|^\d{2}.\d{3}-\d{3}|\d{8})" required>
+                    <input type="text" name="cep" id="cep" class="container__input" pattern="(^\d{5}-\d{3}|^\d{2}.\d{3}-\d{3}|\d{8})" required>
                     <span class="container__erro">Este campo não está válido</span>
                 </div>
                 <div class="cadastro__container">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="cadastro__container">
                     <label for="numero_edereco" class="container__label container__label-numero">Nº</label>
-                    <input type="number" name="numero_endereco" id="numero_endereco" class="container__input" required>
+                    <input type="text" name="numero_endereco" id="numero_endereco" class="container__input" required>
                     <span class="container__erro">Este campo não está válido</span>
                 </div>
                 <div class="cadastro__container">
@@ -94,9 +94,9 @@
                 </div>
             </fieldset>
             <button class="botao">Finalizar Cadastro</button>
-
         </form>
     </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
