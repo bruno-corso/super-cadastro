@@ -51,7 +51,7 @@
                 </div>
                 <div class="cadastro__container">
                     <label for="cpf" class="container__label">CPF</label>
-                    <input type="text" name="cpf" id="cpf" class="container__input" required>
+                    <input type="text" name="cpf" id="cpf" class="container__input" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required>
                     <span class="container__erro">Este campo não está válido</span>
                 </div>
                 <div class="cadastro__container">
@@ -96,7 +96,7 @@
             <button class="botao">Finalizar Cadastro</button>
         </form>
     </div>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
 </body>
 
 </html>
