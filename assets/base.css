@@ -17,14 +17,11 @@ body {
 }
 
 .cadastro__container span {
-    display: none;
+    /* display: none; */
     color: red;
+    font-size: 12px;
 }
 
-.cadastro__container-erro {
-    display: none;
-    color: red;
-}
 
 .cartao {
     margin: 5vh auto;
