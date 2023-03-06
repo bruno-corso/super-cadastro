@@ -64,7 +64,7 @@
                 <legend class="cadastro__legenda">Endereço</legend>
                 <div class="cadastro__container">
                     <label for="cep" class="container__label">CEP</label>
-                    <input type="text" name="cep" id="cep" class="container__input" pattern="(^\d{5}-\d{3}|^\d{2}.\d{3}-\d{3}|\d{8})" required>
+                    <input type="text" name="cep" id="cep" class="container__input" pattern="(^\d{5}-\d{3}|^\d{2}.\d{3}-\d{3}|\d{8})" required minlength="8" maxlength="10">
                     <span class="container__erro"></span>
                 </div>
                 <div class="cadastro__container">

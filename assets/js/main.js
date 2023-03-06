@@ -27,7 +27,6 @@ function verificaInput(input) {
     tiposDeErro.forEach(erro => {
         if (input.validity[erro]) {
             msg = mensagensDeErro[input.name][erro]
-            console.log(msg);
         }
     })
 
