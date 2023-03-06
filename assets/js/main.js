@@ -1,5 +1,6 @@
 import validaCPF from "./valida-cpf.js";
 import validaIdade from "./valida-idade.js";
+import validaCEP from "./valida-cep.js";
 
 const objetoUser = [];
 
@@ -17,6 +18,10 @@ function verificaInput(input) {
     }
     if (input.name == "data_nasc") {
         validaIdade(input);
+    }
+
+    if (input.name == "cep") {
+        validaCEP(input);
     }
 
     tiposDeErro.forEach(erro => {
