@@ -3,6 +3,9 @@ export default function validaIdade(input) {
     if(!verificaMaior18(dataNasc)) {
         input.setCustomValidity(true);
     }
+    else {
+        input.setCustomValidity('');
+    }
 }
 function verificaMaior18(dataNasc) {
     const dataAtual = new Date();

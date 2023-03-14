@@ -4,10 +4,14 @@ export default function validaCPF(input) {
     var msg = "";
     if (numerosRepetidos(cpf) || validaDigito1(cpf) || validaDigito2(cpf)) {
         msg = "CPF inválido!"
+        input.setCustomValidity('Esse CPF não é válido.');
     }
     else {
         msg = "CPF válido!"
+        input.setCustomValidity('');
     }
+
+    console.log(input.validity)
 
     return console.log(msg);
 }
