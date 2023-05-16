@@ -2,9 +2,33 @@ import validaCPF from "./valida-cpf.js";
 import validaIdade from "./valida-idade.js";
 import validaCEP from "./valida-cep.js";
 
-const objetoUser = [];
-
 const allInputs = document.querySelectorAll(".container__input");
+const formulario = document.querySelector("[data-formulario]");
+
+formulario.addEventListener('submit', () => {
+    e.preventDefault();
+
+    console.log("FOI CARALHOOO");
+
+    const infosUser = {
+        "nome" : e.target.elements["nome"].value,
+        "sobrenome" : e.target.elements["sobrenome"].value,
+        "email" : e.target.elements["email"].value,
+        "usuario" : e.target.elements["username"].value,
+        "senha" : e.target.elements["senha"].value,
+        "data_nasc" : e.target.elements["data_nasc"].value,
+        "cpf" : e.target.elements["cpf"].value,
+        "telefone" : e.target.elements["telefone"].value,
+        "cep" : e.target.elements["cep"].value,
+        "endereco" : e.target.elements["endereco"].value,
+        "numero_endereco" : e.target.elements["numero_endereco"].value,
+        "complemento" : e.target.elements["complemento"].value,
+        "cidade" : e.target.elements["cidade"].value,
+        "estado" : e.target.elements["estado"].value    
+    }
+
+    localStorage.setItem("user_cadastro", JSON.stringify(infosUser));
+})
 
 allInputs.forEach(input => {
     input.addEventListener('blur', () => verificaInput(input));
@@ -27,7 +51,6 @@ function verificaInput(input) {
     tiposDeErro.forEach(erro => {
         if (input.validity[erro]) {
             msg = mensagensDeErro[input.name][erro]
-            console.log(msg);
         }
     })
 
@@ -80,13 +103,13 @@ const mensagensDeErro = {
         tooShort: "Por favor, preencha um e-mail válido."
     },
     telefone: {
-        valueMissing: "O campo de telefon não pode estar vazio.",
+        valueMissing: "O campo de telefone não pode estar vazio.",
         patternMismatch: "Por favor, preencha um telefone válido."
     },
     cpf: {
         valueMissing: 'O campo de CPF não pode estar vazio.',
         patternMismatch: "Por favor, preencha um CPF válido.",
-        customError: "O CPF digitado não existe.",
+        customError: "Este CPF não é valido.",
         tooShort: "O campo de CPF não tem caractéres suficientes."
     },
     cep: {
