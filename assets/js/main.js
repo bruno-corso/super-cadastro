@@ -27,7 +27,7 @@ formulario.addEventListener('submit', () => {
         "estado" : e.target.elements["estado"].value    
     }
 
-    console.log(infosUser);
+    localStorage.setItem("user_cadastro", JSON.stringify(infosUser));
 })
 
 allInputs.forEach(input => {

@@ -4,7 +4,7 @@ export default function validaIdade(input) {
         input.setCustomValidity(true);
     }
     else {
-        input.setCustomValidity('');
+        input.setCustomValidity('');    
     }
 }
 function verificaMaior18(dataNasc) {
