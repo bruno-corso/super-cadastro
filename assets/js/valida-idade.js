@@ -4,12 +4,11 @@ export default function validaIdade(input) {
         input.setCustomValidity(true);
     }
     else {
-        input.setCustomValidity('');    
+        input.setCustomValidity("");
     }
 }
 function verificaMaior18(dataNasc) {
     const dataAtual = new Date();
     const dataPermitida = new Date(dataNasc.getUTCFullYear() + 18, dataNasc.getUTCMonth(), dataNasc.getUTCDate());
-    
     return dataAtual >= dataPermitida;
 }
